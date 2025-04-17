@@ -3,7 +3,7 @@ import { NavLink } from 'react-router'
 
 function Nav() {
   return (
-    <div className='h-[10vh] w-full bg-red-200 flex pl-[2%] pr-[2%] justify-between items-center'>
+    <div className='h-[10vh] w-full bg-blue-200 flex pl-[2%] pr-[2%] justify-between items-center'>
       <h1 className='text-white font-bold text-xl'>FeedBack</h1>
       <NavLink className='text-white  text-xl' style={(e)=>{return{color:e.isActive?"green":""}}} to={'/'}>Home</NavLink>
         <NavLink className='text-white text-xl' style={(e)=>{return{color:e.isActive?"green":""}}} to={'/admin'}>Admin</NavLink>
