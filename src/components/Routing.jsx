@@ -1,15 +1,18 @@
 import React from 'react'
 import { Route,Routes } from 'react-router'
-import Home from './Home'
 import Admin from './Admin'
+import SelectPage from './SelectPage'
+import TeacherListPage from './TeacherListPage'
+import FeedbackPage from './FeedbackPage'
 
 function Routing() {
   return (
     <>
     <Routes>
-        <Route path='/' element={<Home/>}></Route>
+        <Route path='/' element={<SelectPage />}></Route>
         <Route path='/admin' element={<Admin/>}></Route>
-        <Route></Route>
+        <Route path="/teachers" element={<TeacherListPage />} />
+        <Route path="/feedback/:teacherId" element={<FeedbackPage />} />
     </Routes>
     </>
   )
